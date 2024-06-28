@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+body {
+  font-family: Roboto, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.ant-layout {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ant-layout-sider {
+  flex: 0 0 250px !important;
+  max-width: 250px !important;
+  min-width: 250px !important;
+  width: 250px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ant-layout-sider-collapsed {
+  flex: 0 0  80px !important;
+  max-width:  80px !important;
+  min-width:  80px !important;
+  width: 80px !important;
+}
+
+.sm-logo {
+  display: none;
+}
+
+.ant-layout-sider-collapsed .sm-logo {
+  display: block;
+}
+
+.ant-layout-sider-collapsed .lg-logo {
+  display: none;
+}
+
+.logo {
+  background-color: #ffd333;
+  margin: 0;
+  height: 64px;
+}
+
+main {
+  overflow-y: scroll;
+  background-color: transparent !important;
+  height: 85vh;
+}
+
+main::-webkit-scrollbar {
+  width: 0px;
+}
+
+.ant-menu-title-content {
+  font-size: 16px;
+}
+
+.ant-layout-header h5  {
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.ant-layout-header p {
+  line-height: 20px;
+  font-size: 13px;
+}
+
+.ant-layout-header div .badge {
+ top: 16px; 
+ right: -6px;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
 }
