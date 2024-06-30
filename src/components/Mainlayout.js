@@ -47,7 +47,7 @@ const Mainlayout = () => {
         <Menu
           theme="dark"
           mode="inline"
-          defaultSelectedKeys={['1']}
+          defaultSelectedKeys={['']}
           onClick={({key}) => {
             if (key == 'signout') {
 
@@ -57,7 +57,7 @@ const Mainlayout = () => {
           }}
           items={[
             {
-              key: '1',
+              key: '',
               icon: <AiOutlineDashboard className='fs-4' />,
               label: 'Dashboard',
             },
