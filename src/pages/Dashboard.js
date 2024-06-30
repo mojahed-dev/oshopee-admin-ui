@@ -1,6 +1,6 @@
 import React from 'react';
 import { GoArrowDownRight, GoArrowDownLeft, GoArrowUpRight, GoArrowUpLeft } from "react-icons/go";
-import { FaArrowTrendDown, FaArrowTrendUp  } from "react-icons/fa6";
+import { FaArrowTrendDown, FaArrowTrendUp } from "react-icons/fa6";
 import { Column } from '@ant-design/plots';
 import { Table } from 'antd';
 
@@ -15,12 +15,12 @@ function Dashboard() {
     { type: 'Jun', value: 0.05 },
     { type: 'Jul', value: 0.01 },
     { type: 'Aug', value: 0.45 },
-    { type: 'Sep', value: 0.35},
+    { type: 'Sep', value: 0.35 },
     { type: 'Oct', value: 0.90 },
     { type: 'Nov', value: 0.1 },
     { type: 'Dec', value: 0.100 },
   ];
-  
+
   const config = {
     data,
     xField: 'type',
@@ -78,7 +78,7 @@ function Dashboard() {
       status: `Completed ${i}`,
     });
   }
-   
+
 
   return (
     <div>
@@ -115,28 +115,21 @@ function Dashboard() {
           </div>
         </div>
       </div>
-      <div className="mb-4">
-        <h3 className="py-4">Income Statistics</h3>
+      <div className="mt-4">
+        <h3 className="mb-4">Income Statistics</h3>
         <div>
           <Column {...config} />;
         </div>
-        <div className="mt-4">
-          <h3 className="mb-4">
-            Recent Orders
-          </h3>
-          <div>
-            <Table columns={columns} dataSource={data1} />
-          </div>
-        </div>
-        <div className="mb-4">
-          <h3 className="mb-4">Recent Reviews</h3>
-          <div>
-            <div></div>
-            <div></div>
-          </div>
+      </div>
+      <div className="mt-4">
+        <h3 className="mb-4">
+          Recent Orders
+        </h3>
+        <div>
+          <Table columns={columns} dataSource={data1} />
         </div>
       </div>
-      
+
     </div>
   )
 }

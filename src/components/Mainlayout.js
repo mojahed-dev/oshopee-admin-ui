@@ -135,13 +135,13 @@ const Mainlayout = () => {
                 },
                 {
                   key: 'blog-category',
-                  icon: <GoChecklist className='fs-4' />,
+                  icon: <IoAddCircleOutline className='fs-4' />,
                   label: 'Add Blog Category',
                 },
                 {
                   key: 'blog-category-list',
                   icon: <GoChecklist className='fs-4' />,
-                  label: 'Add Blog Category',
+                  label: 'Blog Category List',
                 },
               ]
             },

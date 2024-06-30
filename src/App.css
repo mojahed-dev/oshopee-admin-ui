@@ -1,3 +1,26 @@
+:root {
+  --color-212529: #212529;
+  --color-ffd333: #ffd333;
+  --color-47ad24: #47ad24;
+  --color-e52e2e: #e52e2e;
+  --color-828599: #828599;
+  --color-2d464d: #2d464d;
+  --color-c3d4da: #c3d4da;
+}
+
+.green {
+  color: var(--color-47ad24);
+}
+
+.red {
+  color: var(--color-e52e2e);
+}
+
+.form-control {
+  box-shadow: none;
+  border-color: var(--color-c3d4da);
+}
+
 body {
   font-family: Roboto, sans-serif;
 }
@@ -91,10 +114,8 @@ main::-webkit-scrollbar {
  right: -6px;
 }
 
-.green {
-  color: green;
-}
 
-.red {
-  color: red;
+
+.quill {
+  background-color: white;
 }
