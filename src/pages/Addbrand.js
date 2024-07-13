@@ -4,7 +4,7 @@ import CustomInput from '../components/CustomInput'
 function Addbrand() {
   return (
     <div>
-        <h4 className="mb-4">Add Brand</h4>
+        <h4 className="mb-4 title">Add Brand</h4>
         <div>
             <form action="">
                 <CustomInput 

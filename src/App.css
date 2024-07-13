@@ -4,118 +4,41 @@
   --color-47ad24: #47ad24;
   --color-e52e2e: #e52e2e;
   --color-828599: #828599;
-  --color-2d464d: #2d464d;
-  --color-c3d4da: #c3d4da;
+  --color-3d464d: #ed464d;
+  --color-c3d4da: #ced4da;
 }
 
 .green {
   color: var(--color-47ad24);
+  font-size: 14px;
+  font-family: Roboto !important;
 }
-
 .red {
   color: var(--color-e52e2e);
+  font-size: 14px;
+  font-family: Roboto !important;
+}
+.quill {
+  background-color: white;
 }
 
 .form-control {
   box-shadow: none;
   border-color: var(--color-c3d4da);
 }
-
-body {
-  font-family: Roboto, sans-serif;
+.title {
+  font: 28px;
+  font-family: Roboto !important;
+  color: var(--color-212529);
 }
 
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.sub-title {
+  font: 24px;
+  font-family: Roboto !important;
+  color: var(--color-212529);
 }
-
-.roboto-medium {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.roboto-black {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.ant-layout {
-  min-height: 100vh;
-}
-
-.ant-layout-sider {
-  flex: 0 0 250px !important;
-  max-width: 250px !important;
-  min-width: 250px !important;
-  width: 250px !important;
-}
-
-.ant-layout-sider-collapsed {
-  flex: 0 0  80px !important;
-  max-width:  80px !important;
-  min-width:  80px !important;
-  width: 80px !important;
-}
-
-.sm-logo {
-  display: none;
-}
-
-.ant-layout-sider-collapsed .sm-logo {
-  display: block;
-}
-
-.ant-layout-sider-collapsed .lg-logo {
-  display: none;
-}
-
-.logo {
-  background-color: #ffd333;
-  margin: 0;
-  height: 64px;
-}
-
-main {
-  overflow-y: scroll;
-  background-color: transparent !important;
-  height: 85vh;
-}
-
-main::-webkit-scrollbar {
-  width: 0px;
-}
-
-.ant-menu-title-content {
-  font-size: 16px;
-}
-
-.ant-layout-header h5  {
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.ant-layout-header p {
-  line-height: 20px;
-  font-size: 13px;
-}
-
-.ant-layout-header div .badge {
- top: 16px; 
- right: -6px;
-}
-
-
-
-.quill {
-  background-color: white;
+.desc {
+  font: 14px;
+  font-family: Roboto !important;
+  color: var(--color-828599);
 }

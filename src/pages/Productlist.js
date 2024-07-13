@@ -1,5 +1,8 @@
 import React from 'react';
 import { Table } from 'antd';
+import { FaRegEdit } from "react-icons/fa";
+import { MdDelete } from "react-icons/md";
+
 
 const data = [
     { type: 'Jan', value: 0.16 },

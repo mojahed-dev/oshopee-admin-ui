@@ -4,7 +4,7 @@ import CustomInput from '../components/CustomInput'
 function Addblogcat() {
   return (
     <div>
-        <h4 className="mb-4">Add Blog Category</h4>
+        <h4 className="mb-4 title">Add Blog Category</h4>
         <div>
             <form action="">
                 <CustomInput 

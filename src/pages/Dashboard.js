@@ -86,32 +86,32 @@ function Dashboard() {
       <div className='d-flex justify-content-between align-items-center gap-3'>
         <div className='d-flex justify-content-between align-items-end flex-grow-1 bg-white rounded-3 p-3'>
           <div>
-            <p className='mb-0'>Total</p>
-            <h3>$1000</h3>
+            <p className='mb-0 desc'>Total</p>
+            <h3 className='mb-0 sub-title'>$1000</h3>
           </div>
           <div className='d-flex flex-column align-items-end'>
-            <h6><GoArrowDownRight />32%</h6>
-            <p className='mb-0'>Compare to April 2022</p>
+          <h6 className='green'><FaArrowTrendUp /> 32%</h6>
+            <p className='mb-0 desc'>Compare to April 2022</p>
           </div>
         </div>
         <div className='d-flex justify-content-between align-items-end flex-grow-1 bg-white rounded-3 p-3'>
           <div>
-            <p className='mb-0'>Total</p>
-            <h3>$1000</h3>
+            <p className='mb-0 desc'>Total</p>
+            <h3  className='mb-0 sub-title'>$1000</h3>
           </div>
           <div className='d-flex flex-column align-items-end'>
             <h6 className='red'><FaArrowTrendDown /> 32%</h6>
-            <p className='mb-0'>Compare to April 2022</p>
+            <p className='mb-0 desc'>Compare to April 2022</p>
           </div>
         </div>
         <div className='d-flex justify-content-between align-items-end flex-grow-1 bg-white rounded-3 p-3'>
           <div>
-            <p className='mb-0'>Total</p>
-            <h3>$1000</h3>
+            <p className='mb-0 desc'>Total</p>
+            <h3  className='mb-0 sub-title'>$1000</h3>
           </div>
           <div className='d-flex flex-column align-items-end'>
             <h6 className='green'><FaArrowTrendUp /> 32%</h6>
-            <p className='mb-0'>Compare to April 2022</p>
+            <p className='mb-0 desc'>Compare to April 2022</p>
           </div>
         </div>
       </div>

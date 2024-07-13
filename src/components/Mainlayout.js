@@ -14,6 +14,7 @@ import { RiBloggerLine } from "react-icons/ri";
 import { CiCircleQuestion } from "react-icons/ci";
 import { FaBell } from "react-icons/fa";
 import { LuDatabase } from "react-icons/lu";
+import { Link } from 'react-router-dom';
 
 import {
   MenuFoldOutlined,
@@ -39,19 +40,19 @@ const Mainlayout = () => {
     <Layout>
       <Sider trigger={null} collapsible collapsed={collapsed}>
         <div className="logo" >
-        <h2 className='text-white fs-5 text-center py-3 mb-0'>
-          <span className='sm-logo'>DD</span>
-          <span className='lg-logo'>DigiDrift</span>
-        </h2>
+          <h2 className='text-white fs-5 text-center py-3 mb-0'>
+            <span className='sm-logo'>DD</span>
+            <span className='lg-logo'>DigiDrift</span>
+          </h2>
         </div>
         <Menu
           theme="dark"
           mode="inline"
           defaultSelectedKeys={['']}
-          onClick={({key}) => {
+          onClick={({ key }) => {
             if (key == 'signout') {
 
-            }else {
+            } else {
               navigate(key);
             }
           }}
@@ -78,37 +79,37 @@ const Mainlayout = () => {
                 },
                 {
                   key: 'product-list',
-                  icon:<BsCartCheck className='fs-4' />,
+                  icon: <BsCartCheck className='fs-4' />,
                   label: 'Product List',
                 },
                 {
                   key: 'brand',
-                  icon:<SiBrandfolder className='fs-4' />,
+                  icon: <SiBrandfolder className='fs-4' />,
                   label: 'Brand',
                 },
                 {
                   key: 'list-brand',
-                  icon:<CiViewList className='fs-4' />,
+                  icon: <CiViewList className='fs-4' />,
                   label: 'Brand List',
                 },
                 {
                   key: 'category',
-                  icon:<MdOutlineCategory className='fs-4' />,
+                  icon: <MdOutlineCategory className='fs-4' />,
                   label: 'Category',
                 },
                 {
                   key: 'category-list',
-                  icon:<MdOutlineCategory className='fs-4' />,
+                  icon: <MdOutlineCategory className='fs-4' />,
                   label: 'Category List',
                 },
                 {
                   key: 'color',
-                  icon:<IoColorPaletteOutline className='fs-4' />,
+                  icon: <IoColorPaletteOutline className='fs-4' />,
                   label: 'Color',
                 },
                 {
                   key: 'color-list',
-                  icon:<IoColorPaletteOutline className='fs-4' />,
+                  icon: <IoColorPaletteOutline className='fs-4' />,
                   label: 'Color List',
                 },
               ]
@@ -125,7 +126,7 @@ const Mainlayout = () => {
               children: [
                 {
                   key: 'blog',
-                  icon:<IoAddCircleOutline className='fs-4' />,
+                  icon: <IoAddCircleOutline className='fs-4' />,
                   label: 'Add Blog',
                 },
                 {
@@ -150,14 +151,14 @@ const Mainlayout = () => {
               icon: <CiCircleQuestion className='fs-4' />,
               label: 'Equiries',
             },
-          
-            
+
+
           ]}
         />
       </Sider>
       <Layout>
         <Header
-        className='d-flex justify-content-between ps-2 pe-5'
+          className='d-flex justify-content-between ps-2 pe-5'
           style={{
             padding: 0,
             background: colorBgContainer,
@@ -173,22 +174,54 @@ const Mainlayout = () => {
               height: 64,
             }}
           />
-          <div className="d-flex gap-3 align-items-center">
-            <div></div>
-            <div className='d-flex align-items-center gap-4'>
-              <div className='position-relative'>
-                <FaBell className='fs-4' />
-                <span className="badge bg-warning rounded-circle p-1 position-absolute">3</span>
-              </div>
+           <div className="d-flex gap-4 align-items-center">
+            <div className="position-relative">
+              <FaBell className="fs-4" />
+              <span className="badge bg-warning rounded-circle p-1 position-absolute">
+                3
+              </span>
+            </div>
+
+           <div className="d-flex gap-3 align-items-center dropdown">
               <div>
-                <img width={32} height={32} className='img-fluid' src="https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg" alt="profile image" />
-                </div>
+                <img
+                  width={32}
+                  height={32}
+                  src="https://stroyka-admin.html.themeforest.scompiler.ru/variants/ltr/images/customers/customer-4-64x64.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                role="button"
+                id="dropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <h5 className="mb-0">Mojahed</h5>
+                <p className="mb-0">mojahed.alo.habib@gmail.com</p>
+              </div>
+              <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li>
+                  <Link
+                    className="dropdown-item py-1 mb-1"
+                    style={{ height: "auto", lineHeight: "20px" }}
+                    to="/"
+                  >
+                    View Profile
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="dropdown-item py-1 mb-1"
+                    style={{ height: "auto", lineHeight: "20px" }}
+                    to="/"
+                  >
+                    Signout
+                  </Link>
+                </li>
+              </div>
             </div>
-            <div>
-              <h5 className='mb-0'>Mojahed</h5>
-              <p className='mb-0'>mojahed.alo.habib@gmail.com</p>
             </div>
-          </div>
         </Header>
         <Content
           style={{
@@ -199,9 +232,9 @@ const Mainlayout = () => {
             borderRadius: borderRadiusLG,
           }}
         >
-        
-            <Outlet />
-          
+
+          <Outlet />
+
         </Content>
       </Layout>
     </Layout>
